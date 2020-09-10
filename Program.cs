@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ptbn
 {
@@ -24,10 +21,14 @@ namespace ptbn
                 Console.WriteLine("Nhập vào b: ");
                 float b = float.Parse(Console.ReadLine());
 
-                float x = -b / a;
-                Console.WriteLine("{0}x + {1} = 0 \n=> x = {2}", a, b, x);
+                Console.WriteLine("{0}x + {1} = 0 \n=> x = {2}", a, b, ptbn(a, b));
             }
             Console.ReadKey();
+        }
+        static float ptbn(float n, float m)
+        {
+            float kq = -m / n;
+            return kq;
         }
     }
 }
